@@ -1,17 +1,13 @@
 const { MatrixBot } = require("../lib/bot");
+const redis = new (require('ioredis'))();
 
-class emptyRedis {
-  constructor() {}
 
-  doNothing() {
-    return null;
-  }
-}
 
 (async () => {
   let bot = new MatrixBot({
     homeserverUrl: "https://matrix.zerodao.gg",
-    redis: new emptyRedis(),
+    redis: redis,
   });
   await bot.run();
+  await bot.runLoop();
 })();

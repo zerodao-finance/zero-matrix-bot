@@ -12,7 +12,7 @@ yarn
 ```
 yarn node bin/start.js
 ```
-2. Before each restart, delete the storage folder that was built by the bot.
+
 
 
 
