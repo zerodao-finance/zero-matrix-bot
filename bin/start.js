@@ -9,5 +9,5 @@ const redis = new (require('ioredis'))();
     redis: redis,
   });
   await bot.run();
-  // await bot.runLoop();
+  await bot.runLoop();
 })();
