@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "main": "start.js",
   "license": "MIT",
+  "scripts": {
+    "start": "cross-env node bin/start"
+  },
   "dependencies": {
+    "ioredis": "^5.0.5",
     "lodash": "^4.17.21",
     "matrix-bot-sdk": "^0.6.0-beta.8",
-    "ioredis": "^5.0.5",
     "object-hash": "^3.0.0",
     "olm": "https://matrix.org/packages/npm/olm/olm-3.0.0.tgz",
     "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
